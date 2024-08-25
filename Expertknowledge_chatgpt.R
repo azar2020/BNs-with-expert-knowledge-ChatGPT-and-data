@@ -209,3 +209,6 @@ ggplot(errors_long, aes(x = Method, y = error, fill = Method)) +
   theme_minimal() +
   theme(legend.position = "none")
 
+ # Find the probability of each link using Bayesian Model Averaging (BMA) in bdgraph package
+bdgraph.obj <- bdgraph(data = Ontario_discretized_data, method = "gcgm", iter = 20000, save = TRUE)
+plinks(bdgraph.obj, round = 20, burnin = NULL)

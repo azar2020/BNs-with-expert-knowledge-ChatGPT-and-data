@@ -4,9 +4,8 @@
 # Perform bootstrapping to calculate BIC scores and Bayes factors.
 # Plot BIC scores and Bayes factors using line plots and boxplots.
 # Compute and display the mean and standard deviation of Bayes factors.
-
-# Set working directory
-setwd("C:/Azar_Drive/relationships-between-variables1/01_preprocessing/results")
+# Include cross-validation setup and error calculations in a loop.
+# Error Analysis: Calculate errors, perform paired t-tests, and visualize results with plots.
 
 # Define number of rounding digits
 options(digits = 10)
